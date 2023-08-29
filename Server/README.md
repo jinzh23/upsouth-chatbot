@@ -66,17 +66,17 @@ _Server Dependencies:_
 
 ### **Installation:**
 
-1. Clone the Lexbot sample repo.
+1. Clone the Nesia the chatbot repo.
 
-   ```sh
-   git clone https://github.com/HMoana/lexbot-sample.git
-   ```
+```sh
+   git clone https://github.com/HMoana/Nesia-the-chatbot.git
+```
 
 2. Install NPM packages in both the client and server subdirectories.
 
-   ```sh
+```sh
    npm install
-   ```  
+```  
 
 ---
 
@@ -108,7 +108,7 @@ _Server Dependencies:_
 
 ### **Project Link:**
 
-- [Github repository](https://github.com/HMoana/lexbot-sample.git "Github repository")
+- [Github repository](https://github.com/HMoana/Nesia-the-chatbot.git "Github repository")
 
 ### **License:**
 
