@@ -55,24 +55,24 @@ _Client Dependencies:_
 
 ### **Installation:**
 
-1. Clone the Lexbot sample repo.
+1. Clone the Nesia the chatbot repo.
 
-   ```sh
-   git clone https://github.com/HMoana/lexbot-sample.git
-   ```
+```sh
+   git clone https://github.com/HMoana/Nesia-the-chatbot.git
+```
 
 2. Install NPM packages in both the client and server subdirectories.
 
-   ```sh
+```sh
    npm install
-   ```  
+```  
 
 ---
 
 ### **Instructions:**
 
 - Make sure Amazon Lex Chatbot is built and configured correctly.
-- In the server.js you require: botId, botAliasId, region and the language the bot was built with.
+- In the Server directory you require: botId, botAliasId, region and the language the bot was built with.
 - Security credentials are important in order to access the Amazon Lex Chatbot. For the purposes of this practice environment, we will be using the [AWS shared credentials file environment variable](https://docs.aws.amazon.com/sdkref/latest/guide/creds-config-files.html).
 
 ### **Features:**
@@ -97,7 +97,7 @@ _Client Dependencies:_
 
 ### **Project Link:**
 
-- [Github repository](https://github.com/HMoana/lexbot-sample.git "Github repository")
+- [Github repository](https://github.com/HMoana/Nesia-the-chatbot.git "Github repository")
 
 ### **License:**
 
