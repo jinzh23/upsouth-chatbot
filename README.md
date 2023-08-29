@@ -26,11 +26,11 @@ We will be utilizing the vast services the AWS have to offer. In particular buil
 
 ### _Assumption:_
 
-These instructions start with the assumption that the chatbot has already been built and tested in the AWS Lex console.
+These instructions start with the assumption that the chatbot has already been built and tested in the AWS Lex console. If not, please follow the instructions outlined in the documentation.
 
-### _Setting Up AWS SDK for Amazon Lex Chatbot:_
+### _Setting Up AWS CLI:_
 
-This guide will help set up the local environment to use the AWS SDK for the Amazon Lex chatbot.
+This guide will help set up the local environment. The AWS Command Line Interface (AWS CLI) is a unified tool to manage the AWS services. AWS CLI uses your credentials to authenticate the requests it sends to AWS services.
 
 _Prerequisites:_
 
@@ -38,57 +38,55 @@ _Prerequisites:_
 - AWS Access Key ID and Secret Access Key.
 - Region name
 
-If not, please follow the instructions outlined in the documentation.
-
 _Steps:_
 
-- Install AWS CLI: The AWS Command Line Interface (AWS CLI) is a unified tool to manage the AWS services. AWS CLI uses your credentials to authenticate the requests it sends to AWS services. Download and install it from the [AWS CLI](https://aws.amazon.com/cli/) website.
+- Install AWS CLI: Download and install it from the [AWS CLI](https://aws.amazon.com/cli/) website.
 
 - After the installation, verify it by typing the following command in the local machine powershell (we are using windows):
 
-  ```sh
+```sh
   aws --version
-  ```
+```
 
 - Setup AWS Credentials: This is all done within the local machine powershell. After verifying AWS CLI is installed, run the following command:
 
-    ```sh
-        aws configure 
-    ```
+```sh
+    aws configure 
+```
 
 - You will then be prompted for the following information. Just input the required information and select enter:
 
-    ```sh
-        Access Key Id
-        Secret Access Key
-        Default region name [ap-southeast-2] 
-        Default output format 
-    ```
+```sh
+    Access Key Id
+    Secret Access Key
+    Default region name [ap-southeast-2] 
+    Default output format 
+```
 
-- NOTE: For Default output format, if comes down to your preference. We used json format, but you can use plain text if you wish.
+- NOTE: For Default output format, it comes down to your preference. We used json format, but you can use plain text if you wish.
 
 - After following the required information, there will be no prompt to confirm success. Enter the following command to check if it was successful:
 
-    ```sh
-        aws configure list
-    ```
+```sh
+     aws configure list
+```
 
 - If successful the following will appear in the powershell:
 
-    ```sh
-        profile 
-        access_key
-        secret_key
-        region
-    ```
+```sh
+    profile 
+    access_key
+    secret_key
+    region
+```
 
 - The AWS Credentials are now setup. At this point your security credentials should be stored in your home directory under the path C:\Users\YourUsername\.aws\credentials. The contents of the credentials file should look like this:
 
-  ```sh
+```sh
   [default]
     aws_access_key_id=YOUR_ACCESS_KEY
     aws_secret_access_key=YOUR_SECRET_KEY
-  ```
+```
 
 - Your local environment should now be set.
 
@@ -100,15 +98,15 @@ _Steps:_
 
 1. Clone the Lexbot sample repo.
 
-   ```sh
-   git clone https://github.com/HMoana/lexbot-sample.git
-   ```
+```sh
+   git clone https://github.com/HMoana/Nesia-the-chatbot.git
+```
 
 2. Install NPM packages in both the client and server subdirectories.
 
-   ```sh
+```sh
    npm install
-   ```  
+```  
 
 ---
 
@@ -140,7 +138,7 @@ _Steps:_
 
 ### **Project Link:**
 
-- [Github repository](https://github.com/HMoana/lexbot-sample.git "Github repository")
+- [Github repository](https://github.com/HMoana/Nesia-the-chatbot.git "Github repository")
 
 ### **License:**
 
