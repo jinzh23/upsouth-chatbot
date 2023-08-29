@@ -1,0 +1,82 @@
+@import url('https://fonts.cdnfonts.com/css/sprite-graffiti');
+
+.heroContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.heroContainer__imageContainer {
+  flex: 1;
+}
+
+.heroContainer__ideaImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 80%; 
+  margin-left: 20px; 
+}
+
+.heroContainer__textContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+  margin-top: 200px;
+}
+
+.heroContainer__content {
+  padding: 20px;
+}
+
+.heroContainer__title {
+  color: #000000b3;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: left; 
+  font-family: 'Sprite Graffiti', sans-serif;
+}
+
+.heroContainer__button {
+  color: white;
+  background-color: #00bf63;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Sprite Graffiti', sans-serif;
+  cursor: pointer;
+  margin-bottom: 290px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.heroContainer__button:hover {
+  background-color: #000000b3;
+}
+
+@media screen and (max-width: 800px) {
+  .heroContainer__textContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .heroContainer__textContainer {
+    padding-left: 50px;
+  }
+
+  .heroContainer__button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-bottom: 150px;
+  }
+
+  .heroContainer__title {
+    font-size: 44px;
+  }
+}
