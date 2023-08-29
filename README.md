@@ -102,7 +102,7 @@ _Steps:_
    git clone https://github.com/HMoana/Nesia-the-chatbot.git
 ```
 
-2. Install NPM packages in both the client and server subdirectories.
+2. Install NPM packages.
 
 ```sh
    npm install
