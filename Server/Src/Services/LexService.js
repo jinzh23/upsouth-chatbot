@@ -23,20 +23,22 @@
 //   sendChatbotMessage,
 // };
 
+const {
+  LexRuntimeV2Client,
+  RecognizeTextCommand,
+} = require("@aws-sdk/client-lex-runtime-v2");
 
-const { LexRuntimeV2Client, RecognizeTextCommand } = require("@aws-sdk/client-lex-runtime-v2");
+const botId = "QQOKS5IODT";
+const botAliasId = "TSTALIASID";
 
-const botId = 'PF7DMGYT2Y';
-const botAliasId = 'YXJIAU26XN';
-
-const lexClient = new LexRuntimeV2Client({ region: 'ap-southeast-2' });
+const lexClient = new LexRuntimeV2Client({ region: "ap-southeast-2" });
 
 const sendChatbotMessage = async (userInput) => {
   const params = {
     botId: botId,
     botAliasId: botAliasId,
-    localeId: 'en_AU',
-    sessionId: '08-2023',
+    localeId: "en_US",
+    sessionId: "08-2023",
     text: userInput,
   };
 

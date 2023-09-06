@@ -1,25 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Modal from 'react-modal';
-import styles from '../Styles/ModalComponent.module.css';
-import { SiProbot } from 'react-icons/si';
+import React from "react";
+import PropTypes from "prop-types";
+import Modal from "react-modal";
+import styles from "../Styles/ModalComponent.module.css";
+import { SiProbot } from "react-icons/si";
 
 const CustomStyles = {
   content: {
-    position: 'fixed',
-    bottom: '20px',
-    left: '420px',
-    width: '900px',
-    height: '700px',
-    padding: '0', 
-    overflow: 'auto',
-    borderRadius: '4px',
-    outline: 'none',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginTop: 0, 
-    backgroundColor: '#E8E8E8',
-    zIndex: 10000, 
+    position: "fixed",
+    bottom: "20px",
+    left: "420px",
+    width: "900px",
+    height: "700px",
+    padding: "0",
+    overflow: "auto",
+    borderRadius: "4px",
+    outline: "none",
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginTop: 0,
+    backgroundColor: "#E8E8E8",
+    zIndex: 10000,
   },
   overlay: {
     background: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
@@ -27,7 +27,7 @@ const CustomStyles = {
   },
 };
 
-Modal.setAppElement('#root');
+Modal.setAppElement("#root");
 
 const ModalComponent = ({ isOpen, closeModal, children }) => {
   return (
@@ -40,15 +40,18 @@ const ModalComponent = ({ isOpen, closeModal, children }) => {
       <div className={styles.modalComponent__modalHeader}>
         <div className={styles.modalComponent__titleContainer}>
           <SiProbot className={styles.modalComponent__robotIcon} />
-          <h2 className={styles.modalComponent__modalTitle}>Nesia the chatbot</h2>
+          <h2 className={styles.modalComponent__modalTitle}>
+            Nesia the Chatbot
+          </h2>
         </div>
-        <button className={styles.modalComponent__closeBtn} onClick={closeModal}>
-          X
+        <button
+          className={styles.modalComponent__closeBtn}
+          onClick={closeModal}
+        >
+          &#x25BC;
         </button>
       </div>
-      <div className={styles.modalComponent__modalBody}>
-        {children}
-      </div>
+      <div className={styles.modalComponent__modalBody}>{children}</div>
     </Modal>
   );
 };
@@ -61,7 +64,3 @@ ModalComponent.propTypes = {
 };
 
 export default ModalComponent;
-
-
-
-
