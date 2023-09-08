@@ -73,4 +73,3 @@ const CallUps = ({ page }) => {
 };
 
 export default CallUps;
-

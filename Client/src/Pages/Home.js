@@ -3,7 +3,6 @@ import Hero from '../Components/Hero';
 import CallUps from '../Components/CallUps';
 import About from '../Components/About';
 import Footer from '../Components/Footer';
-// import ModalComponent from '../Components/ModalComponent';
 import NesiaChatBot from '../Components/NesiaChatBot';
 
 
@@ -16,7 +15,6 @@ const Home = () => {
       <CallUps />
       <About />
       <Footer />
-      {/* <ModalComponent /> */}
       <NesiaChatBot />
     </div>
   )

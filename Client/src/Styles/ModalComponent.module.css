@@ -29,7 +29,7 @@
 
 .modalComponent__modalTitle {
   font-size: 32px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: 'Sprite Graffiti', sans-serif;
   color: white;
   margin: 0;
 }
@@ -44,6 +44,6 @@
 }
 
 .modalComponent__closeBtn:hover {
-  color: white;
+  color: #000000b3;
   font-weight: bold;
 }
