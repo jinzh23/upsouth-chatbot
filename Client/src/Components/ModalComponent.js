@@ -54,7 +54,7 @@ const ModalComponent = ({ isOpen, closeModal, children }) => {
       <div className={styles.modalComponent__modalHeader}>
         <div className={styles.modalComponent__titleContainer}>
           <SiProbot className={styles.modalComponent__robotIcon} />
-          <h2 className={styles.modalComponent__modalTitle}>Nesia te kaiāwhina</h2>
+          <h2 className={styles.modalComponent__modalTitle}>NESIA TE KAIAAWHINA</h2>
         </div>
         <button className={styles.modalComponent__closeBtn} onClick={closeModal}>
           X
